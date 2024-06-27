@@ -25,29 +25,29 @@
 
 ```bash
      git clone https://github.com/AmandaRigaud/TAIC_AV3.git
-    ```
+```
 
 2. Entre na pasta:
 
 ```bash
      cd TAIC_AV3
-    ```
+```
 
 3. Crie a venv:
 
 ```bash
      python3 -m venv venv
      source venv/bin/activate  # No Windows, use `venv\Scripts\activate`
-    ```
+```
 
  4. Instale as dependências:
 
  ```bash
     pip install -r requirements.txt
-    ```
+```
 
  5. Execute a aplicação:
 
-  ```bash
-    python src/app.py
-    ```
+ ```bash
+     python src/app.py
+```
