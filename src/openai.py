@@ -24,7 +24,7 @@ def Chat(texto_usuario):
 def Image(texto_entrada):
     response = client.images.generate(
     model="dall-e-3",
-    prompt="Era uma vez uma coruja muito inteligente e sábia, mas ela se sentia triste por não ter amigos para brincar e conversar. Certo dia, ela decidiu sair voando pela floresta em busca de companhia. No caminho, encontrou um coelho fofinho que estava perdido e com medo. A coruja prontamente se ofereceu para ajudá-lo a encontrar o caminho de volta para casa. Juntos, eles se tornaram grandes amigos, aprendendo que a amizade pode surgir quando menos esperamos, bastando estarmos dispostos a ajudar e ser gentis com o próximo.",
+    prompt=texto_entrada,
     size="1024x1024",
     quality="standard",
     n=1,
@@ -32,11 +32,11 @@ def Image(texto_entrada):
 
     return response.data[0].url
 
-def Audio(texto_entrada):
+def Audio(texto_entrada, file_name):
     response = client.audio.speech.create(
     model="tts-1",
     voice="echo",
-    input="Era uma vez uma coruja muito inteligente e sábia, mas ela se sentia triste por não ter amigos para brincar e conversar. Certo dia, ela decidiu sair voando pela floresta em busca de companhia. No caminho, encontrou um coelho fofinho que estava perdido e com medo. A coruja prontamente se ofereceu para ajudá-lo a encontrar o caminho de volta para casa. Juntos, eles se tornaram grandes amigos, aprendendo que a amizade pode surgir quando menos esperamos, bastando estarmos dispostos a ajudar e ser gentis com o próximo.",
+    input=texto_entrada,
     )
 
-    response.stream_to_file("output.mp3")
+    response.stream_to_file(file_name)
