@@ -1,1 +1,84 @@
-./venv
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribuição / pacotes
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Distribuição de arquivos
+*.manifest
+*.spec
+
+# Ambiente virtual
+venv/
+ENV/
+env/
+.venv/
+.ENV/
+.env/
+
+# PyInstaller
+#  Isso vai incluir dados binários ao invés de apenas src
+#  Isso geralmente é específico da plataforma
+*.manifest
+*.spec
+
+# Arquivos de log e banco de dados local
+*.log
+*.sql
+*.sqlite3
+
+# Pyre type checker
+.pyre/
+
+# Teste de relatórios de cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+cover/
+# Testes em Jupyter
+.ipynb_checkpoints
+
+# Pyenv
+.python-version
+
+# Arquivos do celery beat schedule
+celerybeat-schedule
+celerybeat.pid
+
+# dotenv
+.env
+.env.*
+
+# Arquivos de editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de debug Flask
+instance/
