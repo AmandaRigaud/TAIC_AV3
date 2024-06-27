@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Histórias para Crianças</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .story {
+            margin: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fff;
+            display: inline-block;
+            width: 70%;
+            height: 600px;
+        }
+        .story img {
+            max-width: 100%;
+            height: auto;
+        }
+        .input-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 40px;
+        }
+        .story audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+        textarea {
+            width: 50%;
+            height: 40px;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <textarea placeholder="Que história você gostaria de ouvir hoje?"></textarea>
+            <button>Enviar</button>
+        </div>
+        <div class="story">
+        </div>
+    </div>
+</body>
+</html>
